@@ -81,11 +81,95 @@ function  abcdd() {
 
 
 
-// How to copy  reference values       
+// How to copy  reference values  (spread operator)   
+
+var  a =  [1,2,3,4,5] ;   
+var  b =  [...a] ;   
+
+var obj  =  {name: "mayur"} ;  
+var copyobj  = {...obj};   
+
+
+
+
+ 
+// Truthy & Falsy :- 
+// js mein kuchh bhi liko wo mainly  do prakaar mein se kisi ek prakaar ko belongs karti hai. 
+// falsy values are  = {0, false, undefined, null, NaN, document.all} 
+// truthy values == {all values which are not in falsy values lol}
+
+if (0)  {
+    console.log("hey")  
+}                                 
+else {
+    console.log("hello")
+}
+
+// ouptput == hello  
+
+
+if ('anything')  {
+    console.log("hey")  
+}                                 
+else {
+    console.log("hello")
+}
+
+// ouptput == hey   
+
+
+
+
+// foreach, forin, do-while  
+
+// -----remaining-----
 
  
 
 
+// call back functions  
+
+setTimeout (function () {
+   
+     console.log ("2 second baad chala");   
+
+}, 2000 ) ;    // 2000  miliseconds means 2 seconds 
 
 
  
+
+
+// first class functions :- Is a concept in which we can treat the funtions like variables.  
+
+function  abcm(a) {
+    a();   
+}
+
+abcm(function(){console.log("hello");})
+ 
+
+
+
+// How Array are made behind the scenes, how we can make negative indexes arrays in JS
+
+var p  = [1,3,4]  
+
+var p  = {
+    0: 1,
+    1: 3, 
+    2: 4
+}
+
+
+
+// How to delete Object Prop   
+
+var a = {
+    name : "harsh", 
+    age: 24   
+} ;  
+
+delete a.name ;  
+delete a.name ;   
+
+
