@@ -1,0 +1,23 @@
+# React-JS-Basics
+
+facebook ko ek problem najar aai ki real time mein wo notification and reactions ko show nahi kar 
+paa rahe hai, unhe reaction, notification, and other data deliver karne mein page reload karna pad raha hai
+and wo isliye kyoki  they were using something called php, ab is problem se niptane ke liye 2013 mein 
+ek facebook ke engineer ne ek library banaai ye library khaas thi, kyoki ki ye data ko real
+time mein dikha paa rahi thi, par is library ke kaam karne ka tareeka different tha,
+ye main dom tree ko update nahi karti hai directly, matlab ki agar mein kuchh bhi change karu to directly main
+dom tree update nahi hoga, is library ka khud ka ek dom tree he uska naam hai virtual DOM. 
+ye DOM tree exact copy hai real DOM tree ka, bas ek difference hai, wo hai ki jab bhi virtual DOM mein
+ kuchh change hoga to sirf use change kiya jaayega jo ki change hua hai naa ki poore tree ko refresh kiya jaayega.   
+
+### Use Cases  
+
+- very-very-very less page reloads.  (which improve the user experienece)  
+- extreme use of reusable componenets.    
+- very very efficient.  (good performence)   
+
+
+Functions  --->  Components  in react 
+
+Inside function we write Html code which  is  --> .ajx code (similar to html but It has more superpower than html)   
+
